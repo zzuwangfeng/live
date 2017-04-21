@@ -1,0 +1,28 @@
+
+.container {
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container {
+    margin: 50px auto;
+}
+.video {
+    margin:0 80px;
+}
+.video div {
+    float: left;
+    margin: 10px;
+}
+
+.clearfix:after { 
+    visibility: hidden; 
+    display: block; 
+    font-size: 0; 
+    content: " "; 
+    clear: both; 
+    height: 0; 
+} 
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
