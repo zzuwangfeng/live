@@ -1,7 +1,9 @@
 .vspace {
     margin: 20px;
 }
-
+div {
+	background-color: #fff;
+}
 
 /*.clearfix:after { 
     visibility: hidden; 
