@@ -8,9 +8,13 @@
     <meta name="renderer" content="webkit">
     <link rel="stylesheet" type="text/css" href="./libs/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheet/index.css">
+  <!--
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  -->
     <!--[if lt IE 9]>
-            <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <script  type="text/javascript" src="./libs/dist/js/html5shiv.min.js"></script>
+        <script  type="text/javascript" src="./libs/dist/js/respond.min.js"></script>
     <![endif]-->
     <title>player简单调用演示</title>
 </head>
@@ -28,104 +32,82 @@
     </div>
     <script type="text/javascript" src="./libs/player/ckplayer/ckplayer.js" charset="utf-8"></script>
     <script type="text/javascript">
-    var flashvars = {
-        f: 'http://192.168.100.143:9012/ngvlcs/upload/b467a9cc/6628/4195/ac1b/ac9e02935b52/transcode/video_1000K.mp4',
-        c: 0,
-        e: 1,
-        i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
-    };
-    var params = {
-        bgcolor: '#FFF',
-        allowFullScreen: true,
-        allowScriptAccess: 'always',
-        wmode: 'transparent'
-    };
-    var video = ['http://192.168.100.143:9012/ngvlcs/upload/b467a9cc/6628/4195/ac1b/ac9e02935b52/transcode/video_1000K.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
+    window.onload = function() {
+        var flashvars1 = {
+            f: 'http://192.168.100.143:9012/ngvlcs/upload/b467a9cc/6628/4195/ac1b/ac9e02935b52/transcode/video_1000K.mp4',
+            c: 0,
+            e: 1,
+            i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
+        };
+        var params1 = {
+            bgcolor: '#FFF',
+            allowFullScreen: true,
+            allowScriptAccess: 'always',
+            wmode: 'transparent'
+        };
+        var video = ['http://192.168.100.143:9012/ngvlcs/upload/b467a9cc/6628/4195/ac1b/ac9e02935b52/transcode/video_1000K.mp4->video/mp4'];
+        CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '100%', '100%', true, flashvars1, video, params1);
 
-    function closelights() { //关灯
-        alert(' 本演示不支持开关灯');
-    }
 
-    function openlights() { //开灯
-        alert(' 本演示不支持开关灯');
-    }
-    </script>
-    <script type="text/javascript">
-    var flashvars = {
-        f: 'http://192.168.100.143:9012/ngvlcs/upload/4d992286/dba7/4355/985c/80557dd6facf/transcode/video_1000K.mp4',
-        c: 0,
-        b: 1,
-        e: 1,
-        i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
-    };
-    var params = {
-        bgcolor: '#FFF',
-        allowFullScreen: true,
-        allowScriptAccess: 'always',
-        wmode: 'transparent'
-    };
-    var video = ['http://192.168.100.143:9012/ngvlcs/upload/4d992286/dba7/4355/985c/80557dd6facf/transcode/video_1000K.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a2', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
+        var flashvars2 = {
+            f: 'http://192.168.100.143:9012/ngvlcs/upload/4d992286/dba7/4355/985c/80557dd6facf/transcode/video_1000K.mp4',
+            c: 0,
+            b: 1,
+            e: 1,
+            i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
+        };
+        var params2 = {
+            bgcolor: '#FFF',
+            allowFullScreen: true,
+            allowScriptAccess: 'always',
+            wmode: 'transparent'
+        };
+        var video = ['http://192.168.100.143:9012/ngvlcs/upload/4d992286/dba7/4355/985c/80557dd6facf/transcode/video_1000K.mp4->video/mp4'];
+        CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a2', 'ckplayer_a1', '100%', '100%', true, flashvars2, video, params2);
 
-    function closelights() { //关灯
-        alert(' 本演示不支持开关灯');
-    }
 
-    function openlights() { //开灯
-        alert(' 本演示不支持开关灯');
-    }
-    </script>
-    <script type="text/javascript">
-    var flashvars = {
-        f: 'http://192.168.100.143:9012/ngvlcs/f2bebc46/ba5e/421d/8d92/c516067a9367/transcode/video_1000K.mp4',
-        c: 0,
-        b: 1,
-        e: 1,
-        i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
-    };
-    var params = {
-        bgcolor: '#FFF',
-        allowFullScreen: true,
-        allowScriptAccess: 'always',
-        wmode: 'transparent'
-    };
-    var video = ['http://192.168.100.143:9012/ngvlcs/upload/f2bebc46/ba5e/421d/8d92/c516067a9367/transcode/video_1000K.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a3', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
+        var flashvars3 = {
+            f: 'http://192.168.100.143:9012/ngvlcs/f2bebc46/ba5e/421d/8d92/c516067a9367/transcode/video_1000K.mp4',
+            c: 0,
+            b: 1,
+            e: 1,
+            i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
+        };
+        var params3 = {
+            bgcolor: '#FFF',
+            allowFullScreen: true,
+            allowScriptAccess: 'always',
+            wmode: 'transparent'
+        };
+        var video = ['http://192.168.100.143:9012/ngvlcs/upload/f2bebc46/ba5e/421d/8d92/c516067a9367/transcode/video_1000K.mp4->video/mp4'];
+        CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a3', 'ckplayer_a1', '100%', '100%', true, flashvars3, video, params3);
 
-    function closelights() { //关灯
-        alert(' 本演示不支持开关灯');
-    }
 
-    function openlights() { //开灯
-        alert(' 本演示不支持开关灯');
-    }
-    </script>
-    <script type="text/javascript">
-    var flashvars = {
-        f: 'http://192.168.100.143:9012/ngvlcs/upload/23929863/2998/4d09/9fb9/91410dd33f63/transcode/video_1000K.mp4',
-        c: 0,
-        b: 1,
-        e: 1,
-        i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
-    };
-    var params = {
-        bgcolor: '#FFF',
-        allowFullScreen: true,
-        allowScriptAccess: 'always',
-        wmode: 'transparent'
-    };
-    var video = ['http://192.168.100.143:9012/ngvlcs/upload/23929863/2998/4d09/9fb9/91410dd33f63/transcode/video_1000K.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a4', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
+        var flashvars4 = {
+            f: 'http://192.168.100.143:9012/ngvlcs/upload/23929863/2998/4d09/9fb9/91410dd33f63/transcode/video_1000K.mp4',
+            c: 0,
+            b: 1,
+            e: 1,
+            i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
+        };
+        var params4 = {
+            bgcolor: '#FFF',
+            allowFullScreen: true,
+            allowScriptAccess: 'always',
+            wmode: 'transparent'
+        };
+        var video = ['http://192.168.100.143:9012/ngvlcs/upload/23929863/2998/4d09/9fb9/91410dd33f63/transcode/video_1000K.mp4->video/mp4'];
+        CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a4', 'ckplayer_a1', '100%', '100%', true, flashvars4, video, params4);
 
-    function closelights() { //关灯
-        alert(' 本演示不支持开关灯');
-    }
+        function closelights() { //关灯
+            alert(' 本演示不支持开关灯');
+        }
 
-    function openlights() { //开灯
-        alert(' 本演示不支持开关灯');
+        function openlights() { //开灯
+            alert(' 本演示不支持开关灯');
+        }
+        respond.update();
     }
-    respond.update();
     </script>
 </body>
 
