@@ -2,7 +2,7 @@
     margin: 20px;
 }
 div {
-	background-color: #fff;
+	background-color: #fff !important;
 }
 
 /*.clearfix:after { 
