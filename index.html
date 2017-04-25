@@ -3,46 +3,52 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-     <link rel="stylesheet" type="text/css" href="./libs/dist/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./libs/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheet/index.css">
-   
     <title>player简单调用演示</title>
+
+     <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
     <div class="container">
-            <div class="row vspace">
-                <div id="a1" class="col-md-4"></div>
-                <div id="a2" class="col-md-4"></div>
-                <div id="a3" class="col-md-4"></div>
-            </div>
-            <div class="row vspace">
-                <div id="a4" class="col-md-4"></div>
-                <div id="a5" class="col-md-4"></div>
-                <div id="a6" class="col-md-4"></div>
-            </div>
-            <div class="row vspace">
-                <div id="a7" class="col-md-4"></div>
-                <div id="a8" class="col-md-4"></div>
-                <div id="a9" class="col-md-4"></div>
-            </div>
-            <div class="row vspace">
-                <div id="a10" class="col-md-4"></div>
-                <div id="a11" class="col-md-4"></div>
-                <div id="a12" class="col-md-4"></div>
-            </div>
-            <div class="row vspace">
-                <div id="a13" class="col-md-4"></div>
-                <div id="a14" class="col-md-4"></div>
-                <div id="a15" class="col-md-4"></div>
-            </div>
+        <div class="row vspace">
+            <div id="a1" class="col-xs-12 col-md-4"></div>
+            <div id="a2" class="col-xs-12 col-md-4"></div>
+            <div id="a3" class="col-xs-12 col-md-4"></div>
+        </div>
+        <div class="row vspace">
+            <div id="a4" class="col-xs-12 col-md-4"></div>
+            <div id="a5" class="col-xs-12 col-md-4"></div>
+            <div id="a6" class="col-xs-12 col-md-4 "></div>
+        </div>
+        <div class="row vspace">
+            <div id="a7" class="col-xs-12 col-md-4"></div>
+            <div id="a8" class="col-xs-12 col-md-4"></div>
+            <div id="a9" class="col-xs-12 col-md-4"></div>
+        </div>
+        <div class="row vspace">
+            <div id="a10" class="col-xs-12 col-md-4"></div>
+            <div id="a11" class="col-xs-12 col-md-4"></div>
+            <div id="a12" class="col-xs-12 col-md-4"></div>
+        </div>
+        <div class="row vspace">
+            <div id="a13" class="col-xs-12 col-md-4"></div>
+            <div id="a14" class="col-xs-12 col-md-4"></div>
+            <div id="a15" class="col-xs-12 col-md-4"></div>
+        </div>
     </div>
     <script type="text/javascript" src="./libs/player/ckplayer/ckplayer.js" charset="utf-8"></script>
     <script type="text/javascript">
     var flashvars = {
         f: 'a.mp4',
         c: 0,
-        
         e: 1,
         i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
     };
@@ -53,7 +59,7 @@
         wmode: 'transparent'
     };
     var video = ['a.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -68,7 +74,6 @@
         f: 'http://192.168.100.134/ngopm/webfile/changyishu.mp4',
         c: 0,
         b: 1,
-        
         e: 1,
         i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
     };
@@ -79,7 +84,7 @@
         wmode: 'transparent'
     };
     var video = ['http://192.168.100.134/ngopm/webfile/changyishu.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a2', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a2', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -94,7 +99,6 @@
         f: 'http://v.mifile.cn/b2c-mimall-media/dba9e8dea03044f4e3654fa8c1f00ae6.mp4',
         c: 0,
         b: 1,
-        
         e: 1,
         i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
     };
@@ -105,7 +109,7 @@
         wmode: 'transparent'
     };
     var video = ['http://v.mifile.cn/b2c-mimall-media/dba9e8dea03044f4e3654fa8c1f00ae6.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a3', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a3', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -120,7 +124,6 @@
         f: 'https://images.apple.com/media/us/macbook-pro/2016/b4a9efaa_6fe5_4075_a9d0_8e4592d6146c/films/reveal/macbook-pro-reveal-cc-us-20161107_1280x720h.mp4',
         c: 0,
         b: 1,
-       
         e: 1,
         i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
     };
@@ -131,7 +134,7 @@
         wmode: 'transparent'
     };
     var video = ['https://images.apple.com/media/us/macbook-pro/2016/b4a9efaa_6fe5_4075_a9d0_8e4592d6146c/films/reveal/macbook-pro-reveal-cc-us-20161107_1280x720h.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a4', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a4', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -146,7 +149,6 @@
         f: 'https://images.apple.com/media/cn/macbook-pro/2016/b4a9efaa_6fe5_4075_a9d0_8e4592d6146c/films/qwerty/macbook-pro-qwerty-cn-20161107_1280x720h.mp4',
         c: 0,
         b: 1,
-        
         e: 1,
         i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
     };
@@ -157,7 +159,7 @@
         wmode: 'transparent'
     };
     var video = ['https://images.apple.com/media/cn/macbook-pro/2016/b4a9efaa_6fe5_4075_a9d0_8e4592d6146c/films/qwerty/macbook-pro-qwerty-cn-20161107_1280x720h.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a5', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a5', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -172,7 +174,6 @@
         f: 'https://images.apple.com/media/cn/macbook-pro/2016/b4a9efaa_6fe5_4075_a9d0_8e4592d6146c/films/design/macbook-pro-design-tft-cn-20161026_1536x640h.mp4',
         c: 0,
         b: 1,
-        
         e: 1,
         i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
     };
@@ -183,7 +184,7 @@
         wmode: 'transparent'
     };
     var video = ['https://images.apple.com/media/cn/macbook-pro/2016/b4a9efaa_6fe5_4075_a9d0_8e4592d6146c/films/design/macbook-pro-design-tft-cn-20161026_1536x640h.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a6', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a6', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -208,7 +209,7 @@
         allowScriptAccess: 'always',
         wmode: 'transparent'
     };
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a7', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a7', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -223,7 +224,6 @@
         f: 'https://images.apple.com/media/cn/watch/2016/1b72bf37_d77a_4b7b_8af6_cd5a46754b92/films/made-to-move/watch-made-to-move-tft-cn-20160907_1536x640h.mp4',
         c: 0,
         b: 1,
-        
         e: 1,
         i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
     };
@@ -234,7 +234,7 @@
         wmode: 'transparent'
     };
     var video = ['https://images.apple.com/media/cn/watch/2016/1b72bf37_d77a_4b7b_8af6_cd5a46754b92/films/made-to-move/watch-made-to-move-tft-cn-20160907_1536x640h.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a8', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a8', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -249,7 +249,6 @@
         f: 'https://images.apple.com/media/cn/watch/2016/1b72bf37_d77a_4b7b_8af6_cd5a46754b92/tv-spots/go-time/watch-go-time-cn-20160919_1280x720h.mp4',
         c: 0,
         b: 1,
-        
         e: 1,
         i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
     };
@@ -260,33 +259,7 @@
         wmode: 'transparent'
     };
     var video = ['https://images.apple.com/media/cn/watch/2016/1b72bf37_d77a_4b7b_8af6_cd5a46754b92/tv-spots/go-time/watch-go-time-cn-20160919_1280x720h.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a9', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
-
-    function closelights() { //关灯
-        alert(' 本演示不支持开关灯');
-    }
-
-    function openlights() { //开灯
-        alert(' 本演示不支持开关灯');
-    }
-    </script>
-    <script type="text/javascript">
-    var flashvars = {
-        f: 'http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4',
-        c: 0,
-        b: 1,
-        
-        e: 1,
-        i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
-    };
-    var params = {
-        bgcolor: '#FFF',
-        allowFullScreen: true,
-        allowScriptAccess: 'always',
-        wmode: 'transparent'
-    };
-    var video = ['http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a10', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a9', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
@@ -311,7 +284,32 @@
         wmode: 'transparent'
     };
     var video = ['http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4->video/mp4'];
-    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '100%','100%', true, flashvars, video, params);
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a10', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
+
+    function closelights() { //关灯
+        alert(' 本演示不支持开关灯');
+    }
+
+    function openlights() { //开灯
+        alert(' 本演示不支持开关灯');
+    }
+    </script>
+    <script type="text/javascript">
+    var flashvars = {
+        f: 'http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4',
+        c: 0,
+        b: 1,
+        e: 1,
+        i: 'http://www.ckplayer.com/static/images/cqdw.jpg'
+    };
+    var params = {
+        bgcolor: '#FFF',
+        allowFullScreen: true,
+        allowScriptAccess: 'always',
+        wmode: 'transparent'
+    };
+    var video = ['http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4->video/mp4'];
+    CKobject.embed('./libs/player/ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '100%', '100%', true, flashvars, video, params);
 
     function closelights() { //关灯
         alert(' 本演示不支持开关灯');
